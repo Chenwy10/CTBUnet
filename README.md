@@ -1,7 +1,7 @@
 # CTBUnet: A CNN-Transformer Combined Bilateral U-Net for Microscopy Image Enhancement of Live-Cell
 
 ## Netword architecture:
-<p align="center"><img width="100%" src="BasicSR-github/data/CTBUnet.jpg" /></p>
+<p align="center"><img width="90%" src="BasicSR-github/data/CTBUnet.jpg" /></p>
 
 ## Dataset
 The dataset is in Basicsr-github/datasets

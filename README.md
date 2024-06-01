@@ -4,8 +4,8 @@
 <p align="center"><img width="90%" src="BasicSR-github/data/CTBUnet.jpg" /></p>
 
 ## Sample output:
-<p align="center"><img width="90%" src="BasicSR-github/data/result1.jpg" /></p>
 <p align="center"><img width="90%" src="BasicSR-github/data/result2.jpg" /></p>
+<p align="center"><img width="90%" src="BasicSR-github/data/result1.jpg" /></p>
 
 ## Dataset
 The datasets are in Basicsr-github/datasets

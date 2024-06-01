@@ -1,0 +1,55 @@
+# general settings
+name: test_CTBUGANx4plus_WBC_pairdata_new
+model_type: CTBUGANModel
+scale: 1
+num_gpu: 1
+manual_seed: 0
+
+# dataset and data loader settings
+datasets:
+  test:
+    name: validation
+    type: CTBUnetPairedDataset
+    dataroot_gt: datasets/WBC/test
+    dataroot_lq: datasets/WBC/test
+    dataroot_mask: datasets/WBC/test
+    meta_info: datasets/WBC/test/meta_info/meta_info_WBC_X4_pair_regionaware_new.txt
+    io_backend:
+      type: disk
+
+# network structures
+network_g:
+  type: CTBUnet
+
+network_d:
+  type: UNetDiscriminatorSN
+  num_in_ch: 3
+  num_feat: 64
+  skip_connection: True
+
+# path
+path:
+  # use the pre-trained Real-ESRNet model
+  pretrain_network_g: CTBUgan_WBC_x4.pth
+  param_key_g: params_ema
+  strict_load_g: true
+  pretrain_network_d: 
+  param_key_d: params
+  strict_load_d: true
+  resume_state: ~
+  
+# Uncomment these for validation
+# validation settings
+val:
+  save_img: True
+  suffix: ~  # add suffix to saved images, if None, use exp name
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 0
+      test_y_channel: false
+    ssim:
+      type: calculate_ssim
+      crop_border: 0
+      test_y_channel: false

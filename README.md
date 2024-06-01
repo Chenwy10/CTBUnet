@@ -4,7 +4,7 @@
 <p align="center"><img width="90%" src="BasicSR-github/data/CTBUnet.jpg" /></p>
 
 ## Dataset
-The dataset is in Basicsr-github/datasets
+The datasets are in Basicsr-github/datasets
 
 ## Installation
 - basicsr.1.4.2
@@ -29,12 +29,12 @@ The dataset is in Basicsr-github/datasets
 
 ### Pretrained models
 
-The pretrained models are available in [google drive]()
+The pretrained models are available in [google drive](https://drive.google.com/drive/folders/133aa9GWYe-NnWYjeQ3P-EkS80HJlGkN4?usp=drive_link)
 
 ### Evaluation process
 
 ```
-python 
+PYTHONPATH="./:${PYTHONPATH}" CUDA_VISIBLE_DEVICES=0 python basicsr/test.py -opt options/test/CTBUnet/test_CTBUgan_x4plus_WBC_pairdata_no_half.yml
 ```
 
 ## Contact

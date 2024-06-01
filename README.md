@@ -3,6 +3,9 @@
 ## Netword architecture:
 <p align="center"><img width="90%" src="BasicSR-github/data/CTBUnet.jpg" /></p>
 
+## Sample output:
+<p align="center"><img width="90%" src="BasicSR-github/data/result.jpg" /></p>
+
 ## Dataset
 The datasets are in Basicsr-github/datasets
 

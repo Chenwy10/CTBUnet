@@ -38,7 +38,7 @@ The pretrained models are available in [google drive](https://drive.google.com/d
 ### Evaluation process
 
 ```
-PYTHONPATH="./:${PYTHONPATH}" CUDA_VISIBLE_DEVICES=0 python basicsr/test.py -opt options/test/CTBUnet/test_CTBUgan_x4plus_WBC_pairdata_no_half.yml
+PYTHONPATH="./:${PYTHONPATH}" CUDA_VISIBLE_DEVICES=0 python basicsr/test.py -opt options/test/CTBUnet/test_CTBUgan_x2.5plus_Sperm_pairdata_no_half.yml
 ```
 
 ## Contact

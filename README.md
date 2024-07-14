@@ -4,7 +4,6 @@
 <p align="center"><img width="90%" src="BasicSR-github/data/CTBUnet.jpg" /></p>
 
 ## Sample output:
-<p align="center"><img width="90%" src="BasicSR-github/data/result2.jpg" /></p>
 <p align="center"><img width="90%" src="BasicSR-github/data/result1.jpg" /></p>
 
 ## Dataset
@@ -15,14 +14,7 @@ The datasets are in Basicsr-github/datasets
 - pytorch.2.1.2
 
 ## Results and models
-**On Synthesized WBC**
-
-|Methods | Scale | PSNR | SSIM | mDice | mIoU |
-|--------|-------|------|------|-------|------|
-|CTBUnet |  x4   |31.20 |0.8979|0.9310 |0.9215|
-|CTBUnet |  x8   |27.36 |0.8239|0.8940 |0.8731|
-
-**On Real-world Sperm**
+**On Sperm Cell Enhancement Dataset**
 
 |Methods | Scale | PSNR | SSIM | mDice | mIoU |
 |--------|-------|------|------|-------|------|
